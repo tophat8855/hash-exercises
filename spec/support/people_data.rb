@@ -1,4 +1,4 @@
-def people
+def people_data
   {
     "joe" => {
       first_name: "Joe",

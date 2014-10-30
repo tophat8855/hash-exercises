@@ -4,12 +4,17 @@ describe 'creating hashes' do
   let(:___) { nil }
 
   let(:dogs) {
-    ___ # change this to the hash that will get tests passing!
-  }
+    {"Harleigh" => {
+        favorite_toy: "frog",
+        sports: ["frisbee", "hiking"]
+      },
+    "Trixie" => {
+        favorite_food: "steak",
+        :sports => [:swimming, :prancing]
+        }
+      }
+    }
 
-  before do
-    pending
-  end
 
   it "retuns the dogs names" do
     expect( dogs.keys ).to be == ["Harleigh", "Trixie"]
@@ -28,6 +33,6 @@ describe 'creating hashes' do
   end
 
   it "returns Trixies favorite sports" do
-    expect(dogs['Harleigh'][:sports]).to be == [:swimming, :prancing]
+    expect(dogs['Trixie'][:sports]).to be == [:swimming, :prancing]
   end
 end
